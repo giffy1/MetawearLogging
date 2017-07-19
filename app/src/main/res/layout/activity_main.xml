@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cs.umass.edu.metawearlogging.MainActivity">
+
+    <Switch
+        android:id="@+id/switchMetawear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtConnect"
+            android:layout_width="250dp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_height="50dp"/>
+
+        <com.hanks.library.AnimateCheckBox
+            android:id="@+id/chkConnect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            app:animDuration="200"
+            app:checkedColor="#00c300"
+            app:lineColor="#fff"
+            app:lineWidth="1.2dp"
+            app:unCheckColor="#aaaaaa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtStartAccelerometer"
+            android:layout_width="250dp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_height="50dp"/>
+
+        <com.hanks.library.AnimateCheckBox
+            android:id="@+id/chkAccelerometer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            app:animDuration="200"
+            app:checkedColor="#00c300"
+            app:lineColor="#fff"
+            app:lineWidth="1.2dp"
+            app:unCheckColor="#aaaaaa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtDownloadLogs"
+            android:layout_width="250dp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_height="50dp"/>
+
+        <com.hanks.library.AnimateCheckBox
+            android:id="@+id/chkDownloadLogs"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            app:animDuration="200"
+            app:checkedColor="#00c300"
+            app:lineColor="#fff"
+            app:lineWidth="1.2dp"
+            app:unCheckColor="#aaaaaa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtDisconnect"
+            android:layout_width="250dp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_height="50dp"/>
+
+        <com.hanks.library.AnimateCheckBox
+            android:id="@+id/chkDisconnect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            app:animDuration="200"
+            app:checkedColor="#00c300"
+            app:lineColor="#fff"
+            app:lineWidth="1.2dp"
+            app:unCheckColor="#aaaaaa" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtSensorOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
